@@ -1,6 +1,7 @@
 # visualization for time series data
 
-# Alright! Let's use a simple time series dataset: the Air Passengers dataset, which contains monthly totals of international airline passengers from 1949 to 1960.
+# Alright! Let's use a simple time series dataset: the Air Passengers dataset, which contains monthly totals
+# of international airline passengers from 1949 to 1960.
 #
 # We'll start by loading the dataset and then visualizing it using some of the techniques mentioned above.
 #
@@ -16,9 +17,11 @@ df = pd.read_csv(data_url, parse_dates=["Month"], index_col="Month")
 # Display the first few rows of the dataset
 df.head()
 
-# I apologize for the oversight. I don't have direct internet access in this environment and cannot fetch the dataset directly from an external URL.
+# I apologize for the oversight. I don't have direct internet access in this environment and cannot fetch
+# the dataset directly from an external URL.
 #
-# However, I do have access to a wide range of datasets. Let's use a sample time series dataset I have on hand, which represents a generic monthly count of events over a period of time.
+# However, I do have access to a wide range of datasets. Let's use a sample time series dataset I have on hand,
+# which represents a generic monthly count of events over a period of time.
 #
 # Let's start by generating the dataset and plotting it.
 
@@ -41,7 +44,8 @@ plt.ylabel('Count')
 plt.grid(True)
 plt.show()
 
-# Here's our sample time series data, visualized using a line plot. This plot helps us understand the overall trend and fluctuations in the data over time.
+# Here's our sample time series data, visualized using a line plot.
+# This plot helps us understand the overall trend and fluctuations in the data over time.
 #
 # Now, let's explore some other visualization techniques:
 #
@@ -66,9 +70,12 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
-# The histogram and density plot provides insight into the distribution of the data points. The histogram represents the frequency of data points within specific intervals, while the density plot provides a smoothed version of the distribution.
+# The histogram and density plot provides insight into the distribution of the data points.
+# The histogram represents the frequency of data points within specific intervals, while the density plot provides
+# a smoothed version of the distribution.
 #
-# Next, let's look at a box and whisker plot, grouped by year. This will help us understand the distribution of data for each year and identify any outliers or trends.
+# Next, let's look at a box and whisker plot, grouped by year. This will help us understand the distribution
+# of data for each year and identify any outliers or trends.
 
 # Box and Whisker Plot by Year
 df_sample['Year'] = df_sample.index.year
@@ -82,9 +89,16 @@ plt.ylabel('Count')
 plt.grid(True, axis='y')
 plt.show()
 
-# The box and whisker plot provides a summarized view of the distribution of the data for each year. Each box represents the interquartile range (IQR) where the central box represents values from the lower to upper quartile (25th to 75th percentile). The line inside the box is the median. Whiskers extend to 1.5 times the IQR, and data points outside of this range can be considered outliers.
+# The box and whisker plot provides a summarized view of the distribution of the data for each year.
+# Each box represents the interquartile range (IQR) where the central box represents values from the lower
+# to upper quartile (25th to 75th percentile). The line inside the box is the median.
+# Whiskers extend to 1.5 times the IQR, and data points outside of this range can be considered outliers.
 #
-# Lastly, let's decompose the time series into its trend, seasonal, and residual components. Time series decomposition is a way to separate a time series into three distinct components: trend (long-term direction), seasonality (cyclical patterns), and residuals (irregular or noise). This can be helpful to understand underlying patterns and structures within the data. We'll use the seasonal_decompose function from the statsmodels library for this purpose.
+# Lastly, let's decompose the time series into its trend, seasonal, and residual components.
+# Time series decomposition is a way to separate a time series into three distinct components:
+# trend (long-term direction), seasonality (cyclical patterns), and residuals (irregular or noise).
+# This can be helpful to understand underlying patterns and structures within the data.
+# We'll use the seasonal_decompose function from the statsmodels library for this purpose.
 
 from statsmodels.tsa.seasonal import seasonal_decompose
 
@@ -115,7 +129,9 @@ plt.show()
 # Here's the decomposition of our sample time series data:
 #
 # Original Series: This is the raw time series data we started with.
-# Trend Component: Represents the long-term direction of the data. It smoothens out short-term fluctuations to show the underlying trend.
+# Trend Component: Represents the long-term direction of the data.
+# It smoothens out short-term fluctuations to show the underlying trend.
 # Seasonal Component: Captures the regular pattern or cycle in the data that repeats over specific intervals.
-# Residual Component: Represents the irregularities or noise in the data after removing the trend and seasonal components.
+# Residual Component: Represents the irregularities or noise in the data after removing the trend
+# and seasonal components.
 # This decomposition provides a clearer understanding of the underlying structures in the data.
