@@ -44,10 +44,11 @@ The following aspects were evaluated:
 The results of the evaluation are presented in the table below:
 
 | Code Assistant        | Code Quality | Code Style | Code Readability | Code Security | Creativeness | Unit Tests Generation | Troubleshooting |
-|-----------------------| --- | --- | --- | --- | --- | --- | --- |
-| Amazon CodeWhisperer  |  |  |  |  |  |  |  |
-| GitHub Copilot        |  |  |  |  |  |  |  |
-| GPT4 Code Interpreter |  |  |  |  |  |  |  |
+|-----------------------| --- |------------|------------------|---------------| --- |-----------------------|-----------------|
+| Amazon CodeWhisperer  |  | 4          | 4                | 3             |  | 2                     | 3               |
+| GitHub Copilot        |  | 3          | 4                | 2             |  | 3                     | 4               |
+| GPT4 Code Interpreter |  | 5          | 5                | 4             |  | 5                     | 5               |
+| **Total:**            |  | 5          | 5                | 4             |  | 5                     | 5               |
     
 ### Conclusion
 
