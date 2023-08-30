@@ -43,23 +43,38 @@ The following aspects were evaluated:
 
 The results of the evaluation are presented in the table below:
 
-| Code Assistant        | Code Quality | Code Style | Code Readability | Code Security | Creativeness | Unit Tests Generation | Troubleshooting |
-|-----------------------| --- |------------|------------------|---------------| --- |-----------------------|-----------------|
-| Amazon CodeWhisperer  |  | 4          | 4                | 3             |  | 2                     | 3               |
-| GitHub Copilot        |  | 3          | 4                | 2             |  | 3                     | 4               |
-| GPT4 Code Interpreter |  | 5          | 5                | 4             |  | 5                     | 5               |
-| **Total:**            |  | 5          | 5                | 4             |  | 5                     | 5               |
+
+|                       | Amazon CodeWhisperer | GitHub Copilot | GPT4 Code Interpreter |
+|-----------------------|:--------------------:|:--------------:|:---------------------:|
+| Code Quality          |          3           |       4        |           5           |
+| Code Style            |          4           |       3        |           5           |
+| Code Readability      |          4           |       4        |           5           |
+| Code Security         |          3           |       2        |           4           |
+| Creativeness          |          4           |       4        |           5           |
+| Unit Tests Generation |          2           |       3        |           5           |
+| Troubleshooting       |          3           |       4        |           5           |
+| **TOTAL**             |        **23**        |     **24**     |        **34**         |
+
+
     
 ### Conclusion
 
-Based on the results of the evaluation, it has been concluded that the best code assistant is ...
+Based on the results of the evaluation, it has been concluded that the best code assistant 
+(in terms of generated code) is GPT4 Code Interpreter.
 
 ### Topic-related collection of links:
 
-- [How to Use GitHub Copilot to Become a Happier and More Productive Developer](https://www.freecodecamp.org/news/developer-productivity-with-github-copilot/#:~:text=Copilot%20offers%20a%20variety%20of,refactoring%2C%20and%20documenting%20existing%20code)
-- [Research: quantifying GitHub Copilot’s impact on developer productivity and happiness](https://github.blog/2022-09-07-research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
+Amazon CodeWhisperer:
+- [AWS AI Solves Coding Leetcode](https://youtu.be/av9Du7stIEY)
+- [Working with Amazon CodeWhisperer](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/codewhisperer.html)
+
+GitHub Copilot:
 - [Expectation vs. Experience: Evaluating the Usability of Code
 Generation Tools Powered by Large Language Models](https://tianyi-zhang.github.io/files/chi2022-lbw-copilot.pdf)
+- [How to Use GitHub Copilot to Become a Happier and More Productive Developer](https://www.freecodecamp.org/news/developer-productivity-with-github-copilot/#:~:text=Copilot%20offers%20a%20variety%20of,refactoring%2C%20and%20documenting%20existing%20code)
 - [Productivity assessment of neural code completion](https://dl.acm.org/doi/10.1145/3520312.3534864)
-- [AI-Powered Coding Tools Are Here to Help—Not Harm—Your Job, Insist IT Experts](https://www.wsj.com/articles/ai-powered-coding-tools-help-harm-your-job-insist-it-experts-33e79767)
+- [Research: quantifying GitHub Copilot’s impact on developer productivity and happiness](https://github.blog/2022-09-07-research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
+
+GPT4:
+- [Evaluating the ChatGPT Code Interpreter](https://www.featurebase.com/blog/evaluating-the-chat-gpt-code-interpreter-plugin)
 - [Jailbreaking GPT-4's code interpreter](https://www.lesswrong.com/posts/KSroBnxCHodGmPPJ8/jailbreaking-gpt-4-s-code-interpreter)
